@@ -1,0 +1,272 @@
+
+.navbar {
+    background: #3C40C6;
+    width: 100%;
+    height: 2.5em;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+
+}
+
+.answer-icons {
+    color: #3C40C6;
+    margin: 10px 0 10px auto;
+    
+}
+.answer-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.check {
+    color: green;
+}
+
+.comment-input {
+
+    margin-top: 20px;
+    margin-left: 30%;
+    outline: none;
+    border: 1px solid lightgrey;
+    height: 30px;
+    width: 60%;
+    min-width: 300px;
+    border-radius: 20px;
+    padding: 0 10px;
+    
+
+}
+i   {
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 5px;
+    left: 5px;
+    padding: 0 5px;
+  }
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: white;
+    
+}
+
+.search-bar {
+    width: 70%;
+    border-radius: 20px;
+    height: 30px;
+    border: 1px solid lightgrey;
+        margin: 20px 10px 10px 10px;
+}
+.sidebar {
+
+    height: 100%;
+
+    overflow-y: scroll;
+   border-right: 1px solid lightgrey;
+}
+.buttons .button {
+    margin: auto 10px;
+}
+.button {
+    border-radius: 10px;
+    background: #3C40C6;
+    color: white;
+    font-weight: bold;
+    padding: 7px 10px;
+    margin: 10px 0;
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(172,172,172,1);
+    -moz-box-shadow:  0px 3px 6px 1px rgba(172,172,172,1);
+    box-shadow:  0px 3px 6px 1px rgba(172,172,172,1);
+}
+
+.class-name {
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding : 0;
+    margin: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.box {    
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(172,172,172,1);
+    -moz-box-shadow:  0px 3px 6px 1px rgba(172,172,172,1);
+    box-shadow:  0px 3px 6px 1px rgba(172,172,172,1);
+}
+
+.nav-list {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+  
+  }
+
+  .options {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+.question-header h3 {
+    color: #3C40C6;
+    font-size: 1.75rem;
+    margin: 0 ;
+    padding: 0 0 10px 0;
+}
+.nav-list li {
+    padding: 10px 30px;
+}
+.question-list ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+
+}
+
+.buttons {
+    display: flex;
+    width: 80%;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+.go {
+    height: 20px;
+    vertical-align: center;
+}
+
+.h1 {
+    font-size: 2em;
+}
+
+.question-list li {
+    padding: 20px;
+    border-top: 1px solid lightgray;
+    text-align: left;
+
+
+}
+
+.middle-group-mobile {
+    display: none;
+}
+
+.title  {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-body {
+    background-color: #e8e9ff;
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: .75em;
+}
+
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Open Sans, sans-serif;
+}
+
+.question-window {
+    height: 100%;
+    flex-grow: 2;
+    flex: 2;
+    
+}
+
+.side {
+    display: flex; 
+    flex-grow: 1;
+    flex: 1;
+
+}
+
+.collapse-button {
+    width: 30px;
+    height: 100%;
+    outline: none;
+    background: white;
+    border: none;
+    border-right: 1px solid lightgrey;
+    text-align: left;
+    padding: 0;    
+}
+
+.collapse-button :hover {
+    cursor: pointer;
+}
+
+
+.answered {
+    color: #3C40C6;
+    font-size: .75em;
+    text-align: left;
+    font-weight: bold;
+}
+#selected {
+    border: 3px solid  #3C40C6;
+    border-top: 3px solid  #3C40C6;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .question-window {
+        display: none;
+        border: 1px solid cyan;
+    }
+
+    .sidebar {
+        max-width: 62.5em;
+    }
+
+    .middle-group-mobile {
+        display: inline;
+    }
+
+    .class-name {
+        display: none;
+    }
+
+    .middle-group {
+        display: none;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 3000px) {
+
+    html {
+        font-size: 40px;
+    }
+
+  
+}
