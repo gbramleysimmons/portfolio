@@ -21,6 +21,19 @@ import rr_prev from "./img/rrprev.png"
 import rr from "./img/rr.png"
 import rr_report from "./rr/rrfinal.pdf"
 
+import mun_prev from "./img/mun_prev.png"
+import mun1 from "./img/mun1.png"
+import mun2 from "./img/mun2.png"
+import mun3 from "./img/mun3.png"
+
+import maps_prev from "./img/maps_prev.png"
+import maps1 from "./img/maps1.png"
+import maps2 from "./img/maps2.png"
+import maps3 from "./img/maps3.png"
+
+
+
+
 
 
 
@@ -126,11 +139,79 @@ export const projects = [
         technologies: "HTML, CSS",
         link: rr_report,
         description : (<div>
-            As a student in many large lecture classes, digital forms of communication are frequently important to getting the help I need from teaching assistants and professors. One tool many of my classes use is Piazza, an online platform where students can ask questions which other students and professors can answer, and professors can post course announcements. Piazza is not a particularly well designed site, and its weaknesses are especially clear when viewing on mobile or a different non-standard screen size. In this redesign, I attempted to identify the problems with Piazza’s interface, and address them in wireframes, a high fidelity mockup, and a responsive webpage.
+            As a student in many large lecture classes, digital forms of communication are frequently important to getting the
+            help I need from teaching assistants and professors. One tool many of my classes use is Piazza, an online platform
+            where students can ask questions which other students and professors can answer, and professors can post course announcements.
+            Piazza is not a particularly well designed site, and its weaknesses are especially clear when viewing on mobile or a different
+            non-standard screen size. In this redesign, I attempted to identify the problems with Piazza’s interface, and address them in wireframes,
+            a high fidelity mockup, and a responsive webpage.
 
 
         </div>)
     },
+
+    {
+        name: "bucs",
+        preview: mun_prev,
+        role: "Frontend Developer",
+        img: [mun1, mun2, mun3],
+        technologies: "HTML, CSS",
+        link: "browncrisis.org",
+        description: (<div>
+            <div className={"divider"}>
+                As the Director of Technology for the Brown University Crisis Simulation (BUCS), I redesigned the conference website
+                from scratch using HTML and CSS. The previous Director of Technology had developed a much more complicated web application,
+                but the BUCS leadership for 2020 determined that only the functionality from a static page was required.
+            </div>
+
+            <div className={"divider"}>
+                In order to separate user interface decisions from implementation strategy, before implementing any of the actual application,
+                I prototyped the entire site in Adobe XD, including ideal behavior on different screen sizes. I then presented the website design
+                to the rest of the conference secretariat, and made changes based on critique. After a design was agreed on, I began implementing
+                the actual page functionality.
+
+            </div>
+
+            <div className={"divider"}>
+
+                My goals with the design and implementation were functionality, simplicity, and load time. To this end, I chose to write all
+                my own CSS (without using any external libraries) and minimize the amount of Javascript required. Given the lack of JS, nothing is minimized,
+                and so the site is served totally statically. Due to the fact that payments used to be processed on a previous version of the site,
+                it's cached in user's web browsers as having an SSL certificate. Therefore, I needed to deploy the site with an SSL certificate. After some
+                research into web technologies, I decided to use Firebase to deploy.
+            </div>
+
+
+            </div>)
+    },
+
+    {
+        name: "maps",
+        preview: maps_prev,
+        role: "Full Stack Developer",
+        img: [maps1, maps2, maps3],
+        technologies: "Java, Javascript, HTML, CSS, SQL",
+        description: (<div>
+            <div className={"divider"}>
+                For Introduction to Software Engineering, working with one partner, I developed a Java application that
+                used a lazy-loaded A* to find routes within a map loaded from a sqlite database.
+
+            </div>
+
+            <div className={"divider"}>
+                Maps was designed as an exercise in code reuse, with sections of the backend pulled from previous assignments that we had each developed,
+                including a Dijkstra's implementation that loads nodes and edges lazily from a SQL database, autocorrection functionality for street names,
+                and a K-d tree to determine the closest interesection to a latitude and longitude pair.
+            </div>
+
+
+            <div className={"divider"}>
+                The frontend for maps was written using jQuery, and implements the actual map using a HTML Canvas. It implements panning and scrolling.
+                Roads are cached in browser storage every time a request is made to improve responsiveness and load time.
+            </div>
+
+        </div>)
+    }
 
 
 
